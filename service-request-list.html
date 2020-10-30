@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bike Brothers Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="apple-touch-icon" href="assets/images/favicon-180x180.png" sizes="180x180">
+    <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel='dns-prefetch' href='//kit.fontawesome.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/express.min.css">
+</head>
+
+<body>
+
+    <div id="bikebrothers">
+        <header class="app-header">
+            <div class="app-top">
+                <div class="container">
+                    <div class="d-flex">
+                        <a href="index.html" class="header-brand">
+                            <img src="assets/images/logo.png" alt="Bike Brothers" class="header-brand-img">
+                        </a>
+                        <div class="d-flex order-lg-2 ml-auto horizontal-dropdown">
+                            <div class="dropdown d-md-flex">
+                                <a href="#" data-toggle="dropdown" class="nav-link icon nav-link-bg">
+                                    <i class="hi hi-notification"></i>
+                                    <span class="pulse bg-danger"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow">
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown profile">
+                                <a href="#" data-toggle="dropdown"
+                                    class="nav-link pr-2 leading-none text-black-50 d-flex">
+                                    <span>
+                                        <img src="" alt="profile-user" class="avatar profile-user brround cover-image mr-2" data-name="ST">
+                                    </span>
+                                    <span class="text fw-600">
+                                        Welcome, ABC <i class="hi hi-chevron-down mr-0"></i>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <div class="drop-heading">
+                                        <div class="text-center">
+                                            <h5 class="text-dark mb-0">Sudhanshu Tiwari</h5> <small
+                                                class="text-muted">Un-Assign</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-expert"></i>
+                                        Profile </a>
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-settings"></i>
+                                        Settings </a>
+
+                                    <div class="dropdown-divider mt-0"></div>
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-cui"></i> Need
+                                        help? </a> <a class="dropdown-item" href="login.html"> <i
+                                            class="dropdown-icon hi hi-lock"></i> Sign out </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-menu">
+                <div class="container">
+                    <nav class="horizontalMenu">
+                        <ol class="horizontalMenu-list list-inline">
+                            <li class="list-inline-item">
+                                <a href="index.html"><i class="hi hi-dashboard"></i> Dashboard</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-mileage"></i> Masters <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="state-list.html">State</a></li>
+                                    <li><a href="city-list.html">City</a></li>
+                                    <li><a href="bike-list.html">Bike </a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)" class="11/11/2020 11:38:00"><i class="hi hi-services "></i> Subscription <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="new-subscription.html">New Subscription</a></li>
+                                    <li><a href="subscription-list.html">Subscription List</a></li>
+                                    <li><a href="javascript:void(0)" onclick="viewModal()">Subscription Process</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-employees"></i> Staff <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="new-subscription.html">New Staff</a></li>
+                                    <li><a href="user-list.html">Staff List</a></li>
+                                    <li><a href="role-list.html">Role</a></li>
+                                    <li><a href="permission.html">Permission</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-calc"></i> Accounting <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Expenses</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-invoices"></i> Reports <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="javascript:void(0)" onclick="viewModal()">Subscription</a></li>
+                                    <li><a href="">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-inventory-list"></i> Inventory</a>
+
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-customers"></i> Supplies</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="company-profile.html"><i class="hi hi-avatar-o"></i> Company Profile </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="app-content">
+            <div class="container">
+                <div class="page-header">
+                    <h4 class="page-title">Service Request List</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Service Request</a></li>
+                        <li class="breadcrumb-item 11/11/2020 11:38:00" aria-current="page">List</li>
+                    </ol>
+                </div>
+
+                <div class="card-table">
+                    <div class="apploader">
+                        <div class="loader">
+                            <div class="spinner-border" role="status"></div>
+                            <span class="d-block mt-3">Loading...</span>
+                        </div>
+                    </div>
+                    <table class="table table-sm table-bordered sortable datatable">
+                        <thead>
+                            <tr>
+                                <td colspan="8">
+                                    <div class="row">
+                                        <div class="col-md-6 align-self-md-center">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                  <label for="" class="mr-2 fw-500 text-muted">Search : </label>
+                                                  <input type="search" id="" class="form-input">                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-md-right">
+                                            <div class="dropdown d-md-inline-block">
+                                                <a href="#" data-toggle="dropdown" class="nav-link text-dark">
+                                                    Export 
+                                                    <i class="hi hi-chevron-down"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow dropdown-menu-sm">
+                                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-expert"></i>
+                                                        Excel </a>
+                                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-expert"></i>
+                                                        PDF </a>
+                                                </div>
+                                            </div>
+                                            <div class="addMore d-md-inline-block">
+                                                <a class="btn-add" href="service-request.html">
+                                                    <i class="hi hi-create-lg mr-1"></i>
+                                                    Add More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-header">
+                                <th class="text-info">S.No.</th>
+                                <th class="text-info">Name</th>
+                                <th class="text-info">Bike Number</th>
+                                <th class="text-info">Bike Type</th>                                                             
+                                <th class="text-info">Status</th>
+                                <th class="text-info">Created Date</th>   
+                                <th class="text-info no-sort wd-120">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-121</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-122</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-123</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-124</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-125</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-126</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-127</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-128</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-129</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" onclick="viewModal()">SR-130</a></td>
+                                <td>Sudhanshu Tiwari</td>
+                                <td>UP 42 1222</td>
+                                <td>Bajaj</td>
+                                <td>Un-Assign</td>
+                                <td>11/11/2020 11:38:00</td>
+                                <td class="dropDownSel">
+                                    <select onchange="actionSel(this)">
+                                        <option disabled value="0" selected>Un-Assign</option>
+                                        <option value="1">Assign</option>
+                                        <option value="2">Hold</option>
+                                        <option value="3">Resume</option>
+                                        <option value="4">Done</option>
+                                        <option value="5">Cancel</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-footer">
+                            <tr>
+                                <th colspan="8">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <!-- <button type="button" class="disabled bulkDel red">
+                                                Delete
+                                            </button>
+                                            <label class="muted selectItem" id="selectItem"><span>|</span>2 items selected</label>
+                                            <a class="selectItem" id="in11/11/2020 11:38:00Item" href="javascript:void()"><span>|</span> Mark as In11/11/2020 11:38:00 </a> -->
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <div class="justify-content-end">
+                                                        <div class="text-md-right">
+                                                            <span class="dropdown-select">
+                                                                <label class="mb-0">Rows per page:</label>
+                                                                <select>
+                                                                    <option value="10">10</option>
+                                                                    <option value="20">20</option>
+                                                                    <option value="30">30</option>
+                                                                    <option value="40">40</option>
+                                                                </select>
+                                                                <span>1 - 10 of 1442</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                    <nav>
+                                                        <ul class="pagination pagination-sm justify-content-end mb-0">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="#" tabindex="-1"
+                                                                    aria-disabled="true">
+                                                                    <i class="hi hi-chevron-left"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">
+                                                                    <i class="hi hi-chevron-right"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+
+            </div>
+        </main>
+        <footer class="app-footer">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        © 2019 Bike Brothers V1.0.0
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- modal add -->
+    <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+                <div class="modal-header header-grid">
+                    <h5 class="modal-title text-dark">Process</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="vertical progress-line">
+                        <ol>
+                            <li class="assign checked">
+                                <div>
+                                    <h6>Assign <span class="text-muted">Fri, 11th Sep'20</span></h6>
+                                    <p>Your service has been assigned <br>
+                                    <small class="text-muted">Fri, 11th Sep'20 - 12:30 am</small></p>
+                                </div>
+                            </li>
+                            <li class="hold checked">
+                                <div>
+                                    <h6>Hold <span class="text-muted">Fri, 11th Sep'20</span></h6>
+                                    <p>Your service has been assigned <br>
+                                    <small class="text-muted">Fri, 11th Sep'20 - 12:30 am</small></p>
+                                </div>
+                            </li>
+                            <li class="resume checked">
+                                <div>
+                                    <h6>Resume <span class="text-muted">Fri, 11th Sep'20</span></h6>
+                                    <p>Your service has been assigned <br>
+                                    <small class="text-muted">Fri, 11th Sep'20 - 12:30 am</small></p>
+                                </div>
+                            </li>
+                            <li class="done checked">
+                                <div>
+                                    <h6>Done <span class="text-muted">Fri, 11th Sep'20</span></h6>
+                                    <p>Your service has been assigned <br>
+                                    <small class="text-muted">Fri, 11th Sep'20 - 12:30 am</small></p>
+                                </div>
+                            </li>
+                            <li class="cancel checked">
+                                <div>
+                                    <h6>Cancelled <span class="text-muted">Fri, 11th Sep'20</span></h6>
+                                    <p>Your service has been assigned <br>
+                                    <small class="text-muted">Fri, 11th Sep'20 - 12:30 am</small></p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            
+          </div>
+        </div>
+    </div>
+    <!-- modal add -->
+    <!-- modal assign -->
+    <div class="modal fade" id="assignModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content card-form">
+                <div class="card shadow-none mb-0">
+                    <div class="card-header header-grid"><h5 class="card-title text-dark">Assign</h5></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="name" class="text-dark fw-500 label-text"> Engineer :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Select Engineer</option>
+                                        <option value="1">Arvind Shukla</option>
+                                        <option value="2">Ram </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="code" class="text-dark fw-500 label-text"> Time :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">HH</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">MM</option>
+                                                <option value="">00</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                                <option value="">32</option>
+                                                <option value="">33</option>
+                                                <option value="">34</option>
+                                                <option value="">35</option>
+                                                <option value="">36</option>
+                                                <option value="">37</option>
+                                                <option value="">38</option>
+                                                <option value="">39</option>
+                                                <option value="">40</option>
+                                                <option value="">41</option>
+                                                <option value="">42</option>
+                                                <option value="">43</option>
+                                                <option value="">44</option>
+                                                <option value="">45</option>
+                                                <option value="">46</option>
+                                                <option value="">47</option>
+                                                <option value="">48</option>
+                                                <option value="">49</option>
+                                                <option value="">50</option>
+                                                <option value="">51</option>
+                                                <option value="">52</option>
+                                                <option value="">53</option>
+                                                <option value="">54</option>
+                                                <option value="">55</option>
+                                                <option value="">56</option>
+                                                <option value="">57</option>
+                                                <option value="">58</option>
+                                                <option value="">59</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option class="AM">AM</option>
+                                                <option class="PM">PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer text-right">                    
+                        <button type="submit" class="btn btn-sm btn-success"><i class="hi hi-circle-check mr-2"></i>Save</button>
+                        <button type="reset" class="btn btn-sm btn-secondary mr-3" data-dismiss="modal"><i class="hi hi-clear-fill mr-2"></i>Cancel</button>
+                    </div>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+    <!-- modal assign end -->
+    <!-- modal hold -->
+    <div class="modal fade" id="holdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content card-form">
+                <div class="card shadow-none mb-0">
+                    <div class="card-header header-grid"><h5 class="card-title text-dark">Hold</h5></div>
+                    <div class="card-body">
+                        <!-- <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="name" class="text-dark fw-500 label-text"> Engineer :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Select Engineer</option>
+                                        <option value="1">Arvind Shukla</option>
+                                        <option value="2">Ram </option>
+                                    </select>
+                                </div>
+                            </div> 
+                        </div>-->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="code" class="text-dark fw-500 label-text"> Time :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">HH</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">MM</option>
+                                                <option value="">00</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                                <option value="">32</option>
+                                                <option value="">33</option>
+                                                <option value="">34</option>
+                                                <option value="">35</option>
+                                                <option value="">36</option>
+                                                <option value="">37</option>
+                                                <option value="">38</option>
+                                                <option value="">39</option>
+                                                <option value="">40</option>
+                                                <option value="">41</option>
+                                                <option value="">42</option>
+                                                <option value="">43</option>
+                                                <option value="">44</option>
+                                                <option value="">45</option>
+                                                <option value="">46</option>
+                                                <option value="">47</option>
+                                                <option value="">48</option>
+                                                <option value="">49</option>
+                                                <option value="">50</option>
+                                                <option value="">51</option>
+                                                <option value="">52</option>
+                                                <option value="">53</option>
+                                                <option value="">54</option>
+                                                <option value="">55</option>
+                                                <option value="">56</option>
+                                                <option value="">57</option>
+                                                <option value="">58</option>
+                                                <option value="">59</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option class="AM">AM</option>
+                                                <option class="PM">PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="name" class="text-dark fw-500 label-text"> Reason :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer text-right">                    
+                        <button type="submit" class="btn btn-sm btn-success"><i class="hi hi-circle-check mr-2"></i>Save</button>
+                        <button type="reset" class="btn btn-sm btn-secondary mr-3" data-dismiss="modal"><i class="hi hi-clear-fill mr-2"></i>Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal hold end -->
+    <!-- modal resume -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content card-form">
+                <div class="card shadow-none mb-0">
+                    <div class="card-header header-grid"><h5 class="card-title text-dark">Resume</h5></div>
+                    <div class="card-body">
+                        <!-- <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="name" class="text-dark fw-500 label-text"> Engineer :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Select Engineer</option>
+                                        <option value="1">Arvind Shukla</option>
+                                        <option value="2">Ram </option>
+                                    </select>
+                                </div>
+                            </div> 
+                        </div>-->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="code" class="text-dark fw-500 label-text"> Time :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">HH</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">MM</option>
+                                                <option value="">00</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                                <option value="">32</option>
+                                                <option value="">33</option>
+                                                <option value="">34</option>
+                                                <option value="">35</option>
+                                                <option value="">36</option>
+                                                <option value="">37</option>
+                                                <option value="">38</option>
+                                                <option value="">39</option>
+                                                <option value="">40</option>
+                                                <option value="">41</option>
+                                                <option value="">42</option>
+                                                <option value="">43</option>
+                                                <option value="">44</option>
+                                                <option value="">45</option>
+                                                <option value="">46</option>
+                                                <option value="">47</option>
+                                                <option value="">48</option>
+                                                <option value="">49</option>
+                                                <option value="">50</option>
+                                                <option value="">51</option>
+                                                <option value="">52</option>
+                                                <option value="">53</option>
+                                                <option value="">54</option>
+                                                <option value="">55</option>
+                                                <option value="">56</option>
+                                                <option value="">57</option>
+                                                <option value="">58</option>
+                                                <option value="">59</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option class="AM">AM</option>
+                                                <option class="PM">PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer text-right">                    
+                        <button type="submit" class="btn btn-sm btn-success"><i class="hi hi-circle-check mr-2"></i>Save</button>
+                        <button type="reset" class="btn btn-sm btn-secondary mr-3" data-dismiss="modal"><i class="hi hi-clear-fill mr-2"></i>Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal resume end -->
+    <!-- modal done -->
+    <div class="modal fade" id="doneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content card-form">
+                <div class="card shadow-none mb-0">
+                    <div class="card-header header-grid"><h5 class="card-title text-dark">Done</h5></div>
+                    <div class="card-body">
+                        <!-- <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="name" class="text-dark fw-500 label-text"> Engineer :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Select Engineer</option>
+                                        <option value="1">Arvind Shukla</option>
+                                        <option value="2">Ram </option>
+                                    </select>
+                                </div>
+                            </div> 
+                        </div>-->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="code" class="text-dark fw-500 label-text"> Time :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">HH</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">MM</option>
+                                                <option value="">00</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                                <option value="">32</option>
+                                                <option value="">33</option>
+                                                <option value="">34</option>
+                                                <option value="">35</option>
+                                                <option value="">36</option>
+                                                <option value="">37</option>
+                                                <option value="">38</option>
+                                                <option value="">39</option>
+                                                <option value="">40</option>
+                                                <option value="">41</option>
+                                                <option value="">42</option>
+                                                <option value="">43</option>
+                                                <option value="">44</option>
+                                                <option value="">45</option>
+                                                <option value="">46</option>
+                                                <option value="">47</option>
+                                                <option value="">48</option>
+                                                <option value="">49</option>
+                                                <option value="">50</option>
+                                                <option value="">51</option>
+                                                <option value="">52</option>
+                                                <option value="">53</option>
+                                                <option value="">54</option>
+                                                <option value="">55</option>
+                                                <option value="">56</option>
+                                                <option value="">57</option>
+                                                <option value="">58</option>
+                                                <option value="">59</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option class="AM">AM</option>
+                                                <option class="PM">PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer text-right">                    
+                        <button type="submit" class="btn btn-sm btn-success"><i class="hi hi-circle-check mr-2"></i>Generate Bill</button>
+                        <button type="reset" class="btn btn-sm btn-secondary mr-3" data-dismiss="modal"><i class="hi hi-clear-fill mr-2"></i>Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal done end -->
+    <!-- modal cancel -->
+    <div class="modal fade" id="cancelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content card-form">
+                <div class="card shadow-none mb-0">
+                    <div class="card-header header-grid"><h5 class="card-title text-dark">Cancel</h5></div>
+                    <div class="card-body">
+                        <!-- <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="name" class="text-dark fw-500 label-text"> Engineer :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Select Engineer</option>
+                                        <option value="1">Arvind Shukla</option>
+                                        <option value="2">Ram </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="code" class="text-dark fw-500 label-text"> Time :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">HH</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">MM</option>
+                                                <option value="">00</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                                <option value="">32</option>
+                                                <option value="">33</option>
+                                                <option value="">34</option>
+                                                <option value="">35</option>
+                                                <option value="">36</option>
+                                                <option value="">37</option>
+                                                <option value="">38</option>
+                                                <option value="">39</option>
+                                                <option value="">40</option>
+                                                <option value="">41</option>
+                                                <option value="">42</option>
+                                                <option value="">43</option>
+                                                <option value="">44</option>
+                                                <option value="">45</option>
+                                                <option value="">46</option>
+                                                <option value="">47</option>
+                                                <option value="">48</option>
+                                                <option value="">49</option>
+                                                <option value="">50</option>
+                                                <option value="">51</option>
+                                                <option value="">52</option>
+                                                <option value="">53</option>
+                                                <option value="">54</option>
+                                                <option value="">55</option>
+                                                <option value="">56</option>
+                                                <option value="">57</option>
+                                                <option value="">58</option>
+                                                <option value="">59</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option class="AM">AM</option>
+                                                <option class="PM">PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="name" class="text-dark fw-500 label-text"> Reason :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer text-right">                    
+                        <button type="submit" class="btn btn-sm btn-success"><i class="hi hi-circle-check mr-2"></i>Save</button>
+                        <button type="reset" class="btn btn-sm btn-secondary mr-3" data-dismiss="modal"><i class="hi hi-clear-fill mr-2"></i>Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal cancel end -->
+    
+
+    <script src="assets/js/express.min.js"></script>
+    <script src="assets/js/boot.min.js"></script>
+    <script src="assets/js/extra.js"></script>
+
+    <script>
+        let actionSel = (selVal) =>{
+            let SelVal = selVal.value;
+            console.log(SelVal);
+            if(SelVal == 1){
+                $('.modal').modal('hide');
+                $("#assignModal").modal('show');
+            } else if(SelVal == 2){
+                $('.modal').modal('hide');
+                $("#holdModal").modal('show');
+            } else if(SelVal == 3){
+                $('.modal').modal('hide');
+                $("#resumeModal").modal('show');
+            } else if(SelVal == 4){
+                $('.modal').modal('hide');
+                $("#doneModal").modal('show');
+            } else if(SelVal == 5){
+                $('.modal').modal('hide');
+                $("#cancelModal").modal('show');
+            } else{
+                $('.modal').modal('hide');
+            }
+        }
+
+        let viewModal = () =>{
+            $("#viewModal").modal('show');
+        }
+        viewModal();
+    </script>
+
+</body>
+
+</html>

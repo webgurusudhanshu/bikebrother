@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bike Brothers Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="apple-touch-icon" href="assets/images/favicon-180x180.png" sizes="180x180">
+    <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel='dns-prefetch' href='//kit.fontawesome.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/express.min.css">
+</head>
+
+<body>
+
+    <div id="bikebrothers">
+        <header class="app-header">
+            <div class="app-top">
+                <div class="container">
+                    <div class="d-flex">
+                        <a href="index.html" class="header-brand">
+                            <img src="assets/images/logo.png" alt="Bike Brothers" class="header-brand-img">
+                        </a>
+                        <div class="d-flex order-lg-2 ml-auto horizontal-dropdown">
+                            <div class="dropdown d-md-flex">
+                                <a href="#" data-toggle="dropdown" class="nav-link icon nav-link-bg">
+                                    <i class="hi hi-notification"></i>
+                                    <span class="pulse bg-danger"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow">
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                </div>
+                            </div>
+                            <div class="dropdown profile">
+                                <a href="#" data-toggle="dropdown" class="nav-link pr-2 leading-none text-black-50 d-flex">
+                                    <span> 
+                                        <img src="assets/images/user.jpg" alt="profile-user" class="avatar profile-user brround cover-image mr-2">
+                                    </span>
+                                    <span class="text fw-600">
+                                        Welcome, ABC <i
+                                        class="hi hi-chevron-down mr-0"></i>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <div class="drop-heading">
+                                        <div class="text-center">
+                                            <h5 class="text-dark mb-0">Sudhanshu Tiwari</h5> <small
+                                                class="text-muted">Administrator</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider m-0"></div> 
+                                        <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-expert"></i> Profile </a> 
+                                        <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-settings"></i> Settings </a> 
+                                        
+                                    <div class="dropdown-divider mt-0"></div> 
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-cui"></i> Need help? </a> <a
+                                        class="dropdown-item" href="login.html"> <i class="dropdown-icon hi hi-lock"></i> Sign out </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-menu">
+                <div class="container">
+                    <nav class="horizontalMenu">
+                        <ol class="horizontalMenu-list list-inline">
+                            <li class="list-inline-item">
+                                <a href="index.html"><i class="hi hi-dashboard"></i> Dashboard</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-mileage"></i> Masters <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="state-list.html">State</a></li>
+                                    <li><a href="city-list.html">City</a></li>
+                                    <li><a href="bike-list.html">Bike </a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)" class="active"><i class="hi hi-services "></i> Subscription <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="new-subscription.html">New Subscription</a></li>
+                                    <li><a href="subscription-list.html">Subscription List</a></li>
+                                    <li><a href="">Subscription Process</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-employees"></i> Staff <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="add-user.html">New Staff</a></li>
+                                    <li><a href="user-list.html">Staff List</a></li>
+                                    <li><a href="role-list.html">Role</a></li>
+                                    <li><a href="permission.html">Permission</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-calc"></i> Accounting <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Expenses</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-invoices"></i> Reports <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Subscription</a></li>
+                                    <li><a href="">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-inventory-list"></i> Inventory</a>
+
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-customers"></i> Supplies</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="company-profile.html"><i class="hi hi-avatar-o"></i> Company Profile </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="pageMsg">
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <div class="container">
+                            <strong>Just one second</strong> <br/>We're fetching that content for you.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="app-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="page-header">
+                            <h4 class="page-title">Service Request</h4>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Subscription</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Service Request</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="card shadow-none">
+                            <div class="card-body py-3">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div class="col-md-3 align-self-md-center">
+                                                <div class="form-group mb-0">
+                                                    <label for="txtFullName" class="text-dark fw-500 label-text mb-0">Search By:</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                      <button class="btn btn-info" type="button" onclick="showCard('serviceCard')"><i class="hi hi-search"></i></button>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 text-md-right align-self-md-center">
+                                        <a class="btn-add" href="service-request-list.html">
+                                            <i class="hi hi-create-lg mr-1"></i>
+                                            View List
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-v-group card-form position-relative d-none" id="serviceCard">
+                            <div class="apploader show">
+                                <div class="loader">
+                                    <div class="spinner-border" role="status"></div>
+                                    <span class="d-block mt-3">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="card shadow-none ">
+                                <div class="card-header header-grid"> <h5 class="card-title text-dark">Customer Detail </h5> </div>
+                                <div class="card-body">
+                                    <div class="row">       
+                                        <div class="col-lg-2 order-lg-10">
+                                            <div class="form-group form-group mb-0 text-center"> 
+                                                <div class="fileuploader-item position-relative wh-85" id="preview">
+                                                    <div class="fileuploader-item-thumbnail">                                                        
+                                                        <div id="blah">
+                                                            <img src="assets/images/user.jpg" alt="">
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                         
+                                        <div class="col-lg-10">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="txtFullName" class="text-dark fw-500 label-text">Full Name :</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="form-group">
+                                                                <input type="text" name="" id="txtFullName" class="form-control form-control-sm" value="Sudhanshu Tiwari" readonly>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="txtBikeType" class="text-dark fw-500 label-text">Bike Type :</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="form-group">
+                                                                <input type="text" name="txtBikeType" id="txtBikeType" class="form-control form-control-sm" value="Bajaj" readonly>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="txtBikeNum" class="text-dark fw-500 label-text"> Bike Number :</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="form-group">
+                                                                <input type="text" name="" id="txtBikeNum" class="form-control form-control-sm" value="UP54-6666" readonly>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="txtLastService" class="text-dark fw-500 label-text"> Last Service :</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="form-group">
+                                                                <input type="text" name="" id="txtLastService" class="form-control form-control-sm" value="01/10/2020" readonly>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow-none">
+                                <div class="card-header bg-white border-bottom-0"> <h5 class="card-title text-dark mb-0">New Service Details</h5> </div>
+                                <div class="card-body bg-light px-0 py-0 accGrid">
+                                    <table class="table table-sm table-bordered datatable">
+                                        <thead>
+                                            <tr class="table-header">
+                                                <th class="w-50">S.No.</th>
+                                                <th>Descriptions</th>
+                                                <th class="w-36"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="bg-white" id="acc_tbody">
+                                            <tr id="row-1">
+                                                <td>1</td>
+                                                <td class="input-item">
+                                                    <input type="text" placeholder="Please Enter Service">
+                                                </td>
+                                                <td><div class="delete" onclick="delRow('1')"><i class="hi hi-close"></i></div></td>
+                                            </tr>
+                                            <tr id="row-2">
+                                                <td>2</td>
+                                                <td class="input-item">
+                                                    <input type="text" placeholder="Please Enter Service">
+                                                </td>
+                                                <td><div class="delete" onclick="delRow('2')"><i class="hi hi-close"></i></div></td>
+                                            </tr>
+                                            <tr id="row-3">
+                                                <td>3</td>
+                                                <td class="input-item">
+                                                    <input type="text" placeholder="Please Enter Service">
+                                                </td>
+                                                <td><div class="add" onclick="addRow(1)"><i class="hi hi-create-lg"></i></div><div class="delete" onclick="delRow('3')"><i class="hi hi-close"></i></div></td>
+                                            </tr>
+                                        </tbody>
+                                        
+                                    </table>
+                                    
+                                </div>
+                                <div class="card-footer border-top-0 bg-light pt-0">
+                                    <div class="form-group mb-0">                            
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-md-9 ml-auto text-right">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-success"><i class="hi hi-circle-check mr-1"></i>Generate Request <!--<span class="spinner-border spinner-border-sm ml-2" role="status" aria-hidden="true"></span>--></button>
+                                                            <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                                            <div class="dropdown-menu">
+                                                              <a class="dropdown-item" href="#">Generate &amp; Print</a>
+                                                              <a class="dropdown-item" href="#">Generate &amp; Download</a>
+                                                            </div>
+                                                          </div>
+                                                        <button type="reset" class="btn btn-secondary mr-3"><i class="hi hi-clear-fill mr-1"></i> Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+
+            
+            </div>
+        </main>
+        <footer class="app-footer">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        © 2019 Bike Brothers V1.0.0
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/express.min.js"></script>
+    <script src="assets/js/boot.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/extra.js"></script>
+    <script>
+        var t_table = document.getElementById("acc_tbody");
+        // add row
+        let addRow = (numRow) => {
+            let rowId, lastRow, row;
+            lastRow = t_table.rows.length;
+            console.log(event.target.parentNode.firstChild);   
+            row = t_table.insertRow(lastRow);
+            rowId = lastRow + 1;
+            row.setAttribute("id", "row-" + rowId);
+            if(event.target.parentNode.nodeName == "DIV"){
+                event.target.parentNode.remove();
+            } else if(event.target.parentNode.nodeName == "TD"){
+                event.target.parentNode.firstChild.remove();
+            }
+            
+            let cell1 = row.insertCell(0).innerHTML = rowId,
+                cell2 = row.insertCell(1);
+                cell2.classList.add('input-item')
+                cell2.innerHTML = '<input type="text" placeholder="Please Enter Service">';
+            let cell3 = row.insertCell(2).innerHTML = '<div class="add" onclick="addRow(1)"><i class="hi hi-create-lg"></i></div><div class="delete" onclick="delRow('+rowId+')"><i class="hi hi-close"></i></div>';
+            
+                
+        }
+        // regroup
+        let regroup = (rc) =>{
+            for(let j = 0; j<rc;j++){                
+                // t_table.rows[j].removeAttribute("id");
+                // reset row id
+                t_table.rows[j].setAttribute("id", "row-" + (j+1));
+                // reset serial number
+                t_table.rows[j].cells[0].innerHTML = j+1;
+                // reset input id
+                // t_table.rows[j].cells[1];
+                // reset delete button
+                   t_table.rows[j].cells[2].querySelector('.delete').setAttribute("onclick", "delRow("+(j+1)+")");
+            }
+        }
+        // delete row
+        let delRow = (rowId) => {
+            lastRow = t_table.rows.length;
+            if (lastRow > 1) {
+                document.getElementById("row-" + rowId).remove();
+                lastRow--;
+                regroup(lastRow);
+            } else {
+                return false;
+            }
+        };
+        // show servvice card 
+        let showCard = (cardId) =>{
+            if($("#"+cardId).hasClass("d-none")){
+                $("#"+cardId).removeClass('d-none');
+                setTimeout(function(){
+                    $("#"+cardId).find('.apploader').removeClass('show');
+                }, 2000)
+            } else{
+                $("#"+cardId).find('.apploader').addClass('show');
+                setTimeout(function(){
+                    $("#"+cardId).find('.apploader').removeClass('show');
+                }, 2000)
+            }
+            
+            
+        }
+    </script>
+
+</body>
+
+</html>

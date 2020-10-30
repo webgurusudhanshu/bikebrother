@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bike Brothers Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="apple-touch-icon" href="assets/images/favicon-180x180.png" sizes="180x180">
+    <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel='dns-prefetch' href='//kit.fontawesome.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/express.min.css">
+</head>
+
+<body>
+
+    <div id="bikebrothers">
+        <header class="app-header">
+            <div class="app-top">
+                <div class="container">
+                    <div class="d-flex">
+                        <a href="index.html" class="header-brand">
+                            <img src="assets/images/logo.png" alt="Bike Brothers" class="header-brand-img">
+                        </a>
+                        <div class="d-flex order-lg-2 ml-auto horizontal-dropdown">
+                            <div class="dropdown d-md-flex">
+                                <a href="#" data-toggle="dropdown" class="nav-link icon nav-link-bg">
+                                    <i class="hi hi-notification"></i>
+                                    <span class="pulse bg-danger"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow">
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                </div>
+                            </div>
+                            <div class="dropdown profile">
+                                <a href="#" data-toggle="dropdown" class="nav-link pr-2 leading-none text-black-50 d-flex">
+                                    <span> 
+                                        <img src="assets/images/user.jpg" alt="profile-user" class="avatar profile-user brround cover-image mr-2">
+                                    </span>
+                                    <span class="text fw-600">
+                                        Welcome, ABC <i
+                                        class="hi hi-chevron-down mr-0"></i>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <div class="drop-heading">
+                                        <div class="text-center">
+                                            <h5 class="text-dark mb-0">Sudhanshu Tiwari</h5> <small
+                                                class="text-muted">Administrator</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider m-0"></div> 
+                                        <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-expert"></i> Profile </a> 
+                                        <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-settings"></i> Settings </a> 
+                                        
+                                    <div class="dropdown-divider mt-0"></div> 
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-cui"></i> Need help? </a> <a
+                                        class="dropdown-item" href="login.html"> <i class="dropdown-icon hi hi-lock"></i> Sign out </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-menu">
+                <div class="container">
+                    <nav class="horizontalMenu">
+                        <ol class="horizontalMenu-list list-inline">
+                            <li class="list-inline-item">
+                                <a href="index.html"><i class="hi hi-dashboard"></i> Dashboard</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-mileage"></i> Masters <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="state-list.html">State</a></li>
+                                    <li><a href="city-list.html">City</a></li>
+                                    <li><a href="bike-list.html">Bike </a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)" class="active"><i class="hi hi-services "></i> Subscription <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="new-subscription.html">New Subscription</a></li>
+                                    <li><a href="subscription-list.html">Subscription List</a></li>
+                                    <li><a href="">Subscription Process</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-employees"></i> Staff <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="add-user.html">New Staff</a></li>
+                                    <li><a href="user-list.html">Staff List</a></li>
+                                    <li><a href="role-list.html">Role</a></li>
+                                    <li><a href="permission.html">Permission</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-calc"></i> Accounting <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Expenses</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-invoices"></i> Reports <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Subscription</a></li>
+                                    <li><a href="">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-inventory-list"></i> Inventory</a>
+
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-customers"></i> Supplies</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="company-profile.html"><i class="hi hi-avatar-o"></i> Company Profile </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="pageMsg">
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <div class="container">
+                            <strong>Just one second</strong> <br/>We're fetching that content for you.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="app-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <div class="page-header">
+                            <h4 class="page-title">Invoice</h4>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Invoice</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Create</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 mx-auto">                       
+                        <div class="card-v-group card-form position-relative mb-2" id="serviceCard">
+                            <div class="apploader">
+                                <div class="loader">
+                                    <div class="spinner-border" role="status"></div>
+                                    <span class="d-block mt-3">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="card shadow-none">
+                                <div class="card-header bg-white border-bottom-0">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="form-row">
+                                                <div class="col col-4">
+                                                    <label for="">To</label>
+                                                    <input type="text" class="form-control form-control-sm" placeholder="Name, Phone or Bike Number">
+                                                </div>
+                                                <div class="col">
+                                                    <label for="">Date</label>
+                                                    <input type="text" id="date" class="form-control form-control-sm" placeholder="Date">
+                                                </div>
+                                                <div class="col">
+                                                    <label for="">Due Date</label>
+                                                    <input type="text" id="dueDate" class="form-control form-control-sm" placeholder="Due Date">
+                                                </div>
+                                                <div class="col">
+                                                    <label for="">Invoice #</label>
+                                                    <input type="text" class="form-control form-control-sm" placeholder="Invoice #" value="INV-0002">
+                                                </div>
+                                                <div class="col">
+                                                    <label for="">Reference</label>
+                                                    <input type="text" class="form-control form-control-sm" placeholder="Reference" value="QU-0001">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 text-right align-self-md-end">
+                                            <button class="btn btn-add text-decoration-none"><i class="hi hi-preview mr-1"></i> Preview</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body bg-light px-0 py-0 accGrid">
+                                    <table class="table table-sm table-bordered datatable border-bottom-0">
+                                        <thead>
+                                            <tr class="table-header">
+                                                <th>Item</th>
+                                                <th>Description</th>
+                                                <th class="w-85 text-right">Quantity</th>
+                                                <th class="w-85 text-right">Unit Price</th>
+                                                <th class="w-85 text-right">Disc %</th>
+                                                <th class="w-85 text-right">Tax Rate</th>
+                                                <th class="text-right wd-120">Amount INR</th>
+                                                <th class="w-36"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="bg-white" id="acc_tbody">
+                                            <tr id="row-1">
+                                                <td class="input-item">
+                                                    <input type="text">
+                                                </td>
+                                                <td class="input-item">
+                                                    <input type="text">
+                                                </td>
+                                                <td class="input-item">
+                                                    <input type="text" class="text-right">
+                                                </td>
+                                                <td class="input-item">
+                                                    <input type="text" class="text-right">
+                                                </td>
+                                                <td class="input-item">
+                                                    <input type="text" class="text-right">
+                                                </td>
+                                                <td class="input-item">
+                                                    <input type="text" class="text-right">
+                                                </td>
+                                                <td class="bg-light input-item">
+                                                    <input type="text" class="text-right bg-light" readonly>
+                                                </td>
+                                                <td><div class="delete" onclick="delRow('1')"><i class="hi hi-close"></i></div></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="7">
+                                                    <div class="row py-2">
+                                                        <div class="col-md-6">
+                                                            <div class="btn-group btn-group-sm ml-3">
+                                                                <button type="button" class="btn btn-success" onclick="addRow(1)"><i class="hi hi-create-lg mr-1"></i>Add a new line <!--<span class="spinner-border spinner-border-sm ml-2" role="status" aria-hidden="true"></span>--></button>
+                                                                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="javascript:void(0)" onclick="addRow(5)">Add 5</a>
+                                                                    <a class="dropdown-item" href="javascript:void(0)" onclick="addRow(10)">Add 10</a>
+                                                                    <a class="dropdown-item" href="javascript:void(0)" onclick="addRow(15)">Add 15</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="tablePrice">
+                                                                <div class="item line">
+                                                                    <div class="label">Subtotal </div>
+                                                                    <div class="amount">&#8377;1.00</div>
+                                                                </div>
+                                                                <div class="item line grand">
+                                                                    <div class="label">Total</div>
+                                                                    <div class="amount">&#8377;1.00</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tfoot>
+                                        
+                                    </table>
+                                    
+                                </div>
+                                <div class="card-footer bg-white">
+                                    <div class="form-group mb-0">                            
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-md-6 ml-auto">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-primary" onclick="addRow(1)"><i class="hi hi-save mr-1"></i>Save <!--<span class="spinner-border spinner-border-sm ml-2" role="status" aria-hidden="true"></span>--></button>
+                                                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                                            <div class="dropdown-menu">
+                                                              <a class="dropdown-item" href="#">Generate &amp; Print</a>
+                                                              <a class="dropdown-item" href="#">Generate &amp; Download</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 ml-auto text-right">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-success"><i class="hi hi-circle-check mr-1"></i>Approve <!--<span class="spinner-border spinner-border-sm ml-2" role="status" aria-hidden="true"></span>--></button>
+                                                            <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                                            <div class="dropdown-menu">
+                                                              <a class="dropdown-item" href="#">Generate &amp; Print</a>
+                                                              <a class="dropdown-item" href="#">Generate &amp; Download</a>
+                                                            </div>
+                                                        </div>
+                                                        <button type="reset" class="btn btn-secondary mr-3"><i class="hi hi-clear-fill mr-1"></i> Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accNote"></div>
+                <div class="accHist mb-3 pb-3">
+                    <div class="accNote">
+                        <h4 class="header">History &amp; Notes</h4>
+                        <div class="fliterGrid d-none card shadow-none" id="noteDiv">
+                            <div class="card-body pb-0 pt-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="" class="fw-600">Notes</label>
+                                            <textarea name="" id=""  rows="3" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-sm" type="submit">Save</button>
+                                            <button class="btn btn-secondary btn-sm" onclick="closeCard('noteDiv')">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn noteBtn" onclick="showCard('noteDiv')">Add a
+                            note</button>
+                    </div>
+                    <hr class="mb-0">
+                    <div class="pre-note"><b>Created — </b><span class="header">Quote
+                        QU-0001 to raj for 2,500.00</span><br><span class="date">By
+                        Sudhanshu Mishra, 26 May 2020</span> </div>
+                    <div class="show-note" onclick="showCard('historyTable')">                            
+                        <div class="text"><i class="hi hi-chevron-right"></i> Show all (3)</div>
+                    </div>
+                    <div class="accGrid accGrid-2 d-none" id="historyTable">
+                        <table class="table table-sm table-bordered datatable border-bottom-0">
+                            <thead>
+                                <tr class="header-grid">
+                                    <th class="text-info">Date</th>
+                                    <th class="text-info">Action</th>
+                                    <th class="text-info">User</th>
+                                    <th class="text-info">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                                <tr>
+                                    <td>26 May, 2020 <small>9:08pm</small></td>
+                                    <td>Edited</td>
+                                    <td>Sudhanshu Tiwari</td>
+                                    <td>Quote QU-0001 changed.</td>
+                                </tr>
+                                <tr>
+                                    <td>26 May, 2020 <small>9:08pm</small></td>
+                                    <td>Edited</td>
+                                    <td>Sudhanshu Tiwari</td>
+                                    <td>Quote QU-0001 changed.</td>
+                                </tr>
+                                <tr>
+                                    <td>26 May, 2020 <small>9:08pm</small></td>
+                                    <td>Created</td>
+                                    <td>Sudhanshu Tiwari</td>
+                                    <td>Quote QU-0001 to Arvind for 1.00.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+
+            
+            </div>
+        </main>
+        <footer class="app-footer">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        © 2019 Bike Brothers V1.0.0
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/express.min.js"></script>
+    <script src="assets/js/boot.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/extra.js"></script>
+    <script>
+        var t_table = document.getElementById("acc_tbody");
+        // add row
+        let addRow = (numRow) => {
+            let rowId, lastRow, row;
+            for (let i = 1; i <= numRow; i++) {
+                lastRow = t_table.rows.length; 
+                row = t_table.insertRow(lastRow);
+                rowId = lastRow + 1;
+                row.setAttribute("id", "row-" + rowId);       
+                let cell1 = row.insertCell(0),
+                    cell2 = row.insertCell(1),
+                    cell3 = row.insertCell(2),
+                    cell4 = row.insertCell(3),
+                    cell5 = row.insertCell(4),
+                    cell6 = row.insertCell(5),
+                    cell7 = row.insertCell(6),
+                    cell8 = row.insertCell(7);
+                    cell1.classList.add('input-item');
+                    cell1.innerHTML = '<input type="text">';
+                    cell2.classList.add('input-item');
+                    cell2.innerHTML = '<input type="text">';
+                    cell3.classList.add('input-item');
+                    cell3.innerHTML = '<input type="text" class="text-right">';
+                    cell4.classList.add('input-item');
+                    cell4.innerHTML = '<input type="text" class="text-right">';
+                    cell5.classList.add('input-item');
+                    cell5.innerHTML = '<input type="text" class="text-right">';
+                    cell6.classList.add('input-item');
+                    cell6.innerHTML = '<input type="text" class="text-right">';
+                    cell7.classList.add('bg-light');    
+                    cell7.classList.add('input-item');    
+                    cell7.innerHTML = '<input type="text" class="text-right bg-light">';
+                    cell8.innerHTML = '<div class="delete" onclick="delRow('+rowId+')"><i class="hi hi-close"></i></div>';
+            }
+        }
+        // regroup
+        let regroup = (rc) =>{
+            for(let j = 0; j<rc;j++){                
+                // reset row id
+                t_table.rows[j].setAttribute("id", "row-" + (j+1));                
+                // reset delete button
+                t_table.rows[j].cells[7].querySelector('.delete').setAttribute("onclick", "delRow("+(j+1)+")");
+            }
+        }
+        // delete row
+        let delRow = (rowId) => {
+            lastRow = t_table.rows.length;
+            if (lastRow > 1) {
+                document.getElementById("row-" + rowId).remove();
+                lastRow--;
+                regroup(lastRow);
+            } else {
+                return false;
+            }
+        };
+        // show servvice card 
+        let showCard = (cardId) =>{         
+            if(cardId == "historyTable"){   
+                $("#"+cardId).toggleClass('d-none');    
+                let rowLength = document.getElementById(cardId).children[0].rows.length - 1;
+                $(this.event.target.closest('.show-note')).toggleClass('open');
+                if($(this.event.target.closest('.show-note')).hasClass('open')){
+                    $(this.event.target.closest('.show-note')).find('.text').html('<i class="hi hi-chevron-down"></i> Hide all ('+ rowLength +')');                
+                } else{
+                    $(this.event.target.closest('.show-note')).find('.text').html('<i class="hi hi-chevron-right"></i> Show all ('+ rowLength +')');
+                }
+                console.log(rowLength); 
+            } else if(cardId == "noteDiv"){
+                event.target.classList.add('d-none');
+                $("#"+cardId).removeClass('d-none');
+            }       
+        }
+        let closeCard = (cardId) => {
+            $("#"+cardId).addClass('d-none');
+            $('.noteBtn').removeClass('d-none');
+        }
+        $("#date").datepicker();
+        $("#dueDate").datepicker();
+    </script>
+
+</body>
+
+</html>

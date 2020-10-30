@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bike Brothers Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="apple-touch-icon" href="assets/images/favicon-180x180.png" sizes="180x180">
+    <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel='dns-prefetch' href='//kit.fontawesome.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/express.min.css">
+</head>
+
+<body>
+
+    <div id="bikebrothers">
+        <header class="app-header">
+            <div class="app-top">
+                <div class="container">
+                    <div class="d-flex">
+                        <a href="index.html" class="header-brand">
+                            <img src="assets/images/logo.png" alt="Bike Brothers" class="header-brand-img">
+                        </a>
+                        <div class="d-flex order-lg-2 ml-auto horizontal-dropdown">
+                            <div class="dropdown d-md-flex">
+                                <a href="#" data-toggle="dropdown" class="nav-link icon nav-link-bg">
+                                    <i class="hi hi-notification"></i>
+                                    <span class="pulse bg-danger"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow">
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#"> <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted"> view profile </div> </div> </a>
+                                </div>
+                            </div>
+                            <div class="dropdown profile">
+                                <a href="#" data-toggle="dropdown" class="nav-link pr-2 leading-none text-black-50 d-flex">
+                                    <span> 
+                                        <img src="assets/images/user.jpg" alt="profile-user" class="avatar profile-user brround cover-image mr-2">
+                                    </span>
+                                    <span class="text fw-600">
+                                        Welcome, ABC <i
+                                        class="hi hi-chevron-down mr-0"></i>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <div class="drop-heading">
+                                        <div class="text-center">
+                                            <h5 class="text-dark mb-0">Sudhanshu Tiwari</h5> <small
+                                                class="text-muted">Administrator</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider m-0"></div> 
+                                        <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-expert"></i> Profile </a> 
+                                        <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-settings"></i> Settings </a> 
+                                        
+                                    <div class="dropdown-divider mt-0"></div> 
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-cui"></i> Need help? </a> <a
+                                        class="dropdown-item" href="login.html"> <i class="dropdown-icon hi hi-lock"></i> Sign out </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-menu">
+                <div class="container">
+                    <nav class="horizontalMenu">
+                        <ol class="horizontalMenu-list list-inline">
+                            <li class="list-inline-item">
+                                <a href="index.html"><i class="hi hi-dashboard"></i> Dashboard</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-mileage"></i> Masters <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="state-list.html">State</a></li>
+                                    <li><a href="city-list.html">City</a></li>
+                                    <li><a href="bike-list.html">Bike </a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-services "></i> Subscription <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="new-subscription.html">New Subscription</a></li>
+                                    <li><a href="subscription-list.html">Subscription List</a></li>
+                                    <li><a href="">Subscription Process</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-employees"></i> Staff <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="add-user.html">New Staff</a></li>
+                                    <li><a href="user-list.html">Staff List</a></li>
+                                    <li><a href="role-list.html">Role</a></li>
+                                    <li><a href="permission.html">Permission</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-calc"></i> Accounting <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Expenses</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-invoices"></i> Reports <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Subscription</a></li>
+                                    <li><a href="">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-inventory-list"></i> Inventory</a>
+
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-customers"></i> Supplies</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="company-profile.html" class="active"><i class="hi hi-avatar-o"></i> Company Profile </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="app-content">
+            <div class="container">
+                <div class="page-header">
+                    <h4 class="page-title"> Company Profile</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Company Profile</li>
+                    </ol>
+                </div>
+                <div class="position-fixed pageMsg">
+                    <div class="container">
+                        <div class="alert alert-success alert-dismissible shadow" role="alert">
+                            <strong>Just one second</strong> <br/>We're fetching that content for you.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="alert alert-warning alert-dismissible shadow" role="alert">
+                            <strong>Just one second</strong> <br/>We're fetching that content for you.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="alert alert-danger alert-dismissible shadow" role="alert">
+                            <strong>Just one second</strong> <br/>We're fetching that content for you.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-v-group card-form">
+                    <div class="card shadow-none ">
+                        <div class="card-header header-grid"> <h5 class="card-title text-dark">Basic Information</h5> </div>
+                        <div class="card-body">
+                            <div class="row">       
+                                <div class="col-lg-4 order-lg-8">
+                                    <div class="form-group">
+                                        <label class="fileuploader-input position-relative" for="uploadImg">
+                                            <div class="fileuploader-input-inner">
+                                                <i class="hi hi-cloud-upload"></i>
+                                                <b>Upload Logo</b>
+                                            </div>                                                                                
+                                            <input type="file" name="uploadImg" id="uploadImg">
+                                        </label>
+                                        <div class="fileuploader-item position-relative d-none" id="preview">
+                                            <div class="fileuploader-item-thumbnail">
+                                                <div class="fileuploader-action">
+                                                    <span id="fileExt">JPG</span>
+                                                    <button onclick="removeFile()">
+                                                        <i class="close hi hi-close icon"></i>
+                                                    </button>
+                                                </div>
+                                                <div id="blah"></div>
+                                                <div class="file-content">
+                                                    <h5 class="ui header" id="fileName">
+                                                        StockSnap_3DLZS7FV0P.jpg
+                                                    </h5>
+                                                    <span id="fileSize">282 KB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                                <div class="col-lg-8">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="disName" class="text-dark fw-500 label-text">Display Name :</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="text" name="" id="disName" class="form-control" placeholder="Display Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="legalName" class="text-dark fw-500 label-text">Legal/ Trading Name :</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="text" name="" id="legalName" class="form-control" placeholder="Legal/ Trading Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="uploadImg" class="text-dark fw-500 label-text">Company Logo :</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            
+                                        </div>
+                                    </div> -->
+
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="gstNum" class="text-dark fw-500 label-text">GST Number:</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="text" name="" id="gstNum" class="form-control" placeholder="GST Number">
+                                                <small class="fw-600 text-muted">(15-digit PAN-based unique identification number)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="panNum" class="text-dark fw-500 label-text">PAN Number :</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="text" name="" id="panNum" class="form-control" placeholder="PAN Number">
+                                                <small class="fw-600 text-muted">(10-digit PAN-based unique identification number)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none">
+                        <div class="card-header header-grid"> <h5 class="card-title text-dark">Contact Detail</h5> </div>
+                        <div class="card-body">
+                            <div class="row">                                
+                                <div class="col-lg-8">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="" class="text-dark fw-500 label-text"> Comppany Address :</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="text" name="" id="address" class="form-control" placeholder="Address Line 1">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="" id="address2" class="form-control" placeholder="Address Line 2">
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Select State</option>
+                                                    <option value="">State001</option>
+                                                    <option value="">State002</option>
+                                                    <option value="">State003</option>
+                                                    <option value="">State004</option>
+                                                    <option value="">State005</option>
+                                                    <option value="">State006</option>
+                                                    <option value="">State007</option>
+                                                    <option value="">State008</option>
+                                                    <option value="">State009</option>
+                                                </select>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">Select City</option>
+                                                        <option value="">City 001</option>
+                                                        <option value="">City 002</option>
+                                                        <option value="">City 003</option>
+                                                        <option value="">City 004</option>
+                                                        <option value="">City 005</option>
+                                                        <option value="">City 006</option>
+                                                        <option value="">City 007</option>
+                                                        <option value="">City 008</option>
+                                                        <option value="">City 009</option>
+                                                        <option value="">City 010</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="text" name="" id="" class="form-control" placeholder="Pincode">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="phone" class="text-dark fw-500 label-text">Phone/ Mobile No. :</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone/ Mobile No.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="email" class="text-dark fw-500 label-text"> Email Address :</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="email" name="" id="email" class="form-control" placeholder="Email Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="phone" class="text-dark fw-500 label-text">Website :</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="url" name="phone" id="phone" class="form-control" value="http://">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <div class="form-group mb-0">                                
+                                <button type="submit" class="btn btn-success"><i class="hi hi-circle-check mr-1"></i>Save</button>
+                                <button type="reset" class="btn btn-secondary mr-3"><i class="hi hi-clear-fill mr-1"></i> Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+            </div>
+        </main>
+        <footer class="app-footer">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        © 2019 Bike Brothers V1.0.0
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/express.min.js"></script>
+    <script src="assets/js/boot.min.js"></script>
+    <script src="assets/js/extra.js"></script>
+
+    <script>
+         $("#uploadImg").change(function(){
+            readURL(this);
+        });
+    </script>
+
+</body>
+
+</html>

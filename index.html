@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bike Brothers Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="apple-touch-icon" href="assets/images/favicon-180x180.png" sizes="180x180">
+    <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel='dns-prefetch' href='//kit.fontawesome.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/express.min.css">
+</head>
+
+<body>
+
+    <div id="bikebrothers">
+        <header class="app-header">
+            <div class="app-top">
+                <div class="container">
+                    <div class="d-flex">
+                        <a href="index.html" class="header-brand">
+                            <img src="assets/images/logo.png" alt="Bike Brothers" class="header-brand-img">
+                        </a>
+                        <div class="d-flex order-lg-2 ml-auto horizontal-dropdown">
+                            <div class="dropdown d-md-flex">
+                                <a href="#" data-toggle="dropdown" class="nav-link icon nav-link-bg">
+                                    <i class="hi hi-notification"></i>
+                                    <span class="pulse bg-danger"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow">
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex pb-3" href="#">
+                                        <div> <b>Madeleine Scott</b> Sent you add request <div class="small text-muted">
+                                                view profile </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown profile">
+                                <a href="#" data-toggle="dropdown"
+                                    class="nav-link pr-2 leading-none text-black-50 d-flex">
+                                    <span>
+                                        <img src="" alt="profile-user"
+                                            class="avatar profile-user brround cover-image mr-2" data-name="ST">
+                                    </span>
+                                    <span class="text fw-600">
+                                        Welcome, ABC <i class="hi hi-chevron-down mr-0"></i>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <div class="drop-heading">
+                                        <div class="text-center">
+                                            <h5 class="text-dark mb-0">Sudhanshu Tiwari</h5> <small
+                                                class="text-muted">Administrator</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-expert"></i>
+                                        Profile </a>
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-settings"></i>
+                                        Settings </a>
+
+                                    <div class="dropdown-divider mt-0"></div>
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon hi hi-cui"></i> Need
+                                        help? </a> <a class="dropdown-item" href="login.html"> <i
+                                            class="dropdown-icon hi hi-lock"></i> Sign out </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-menu">
+                <div class="container">
+                    <nav class="horizontalMenu">
+                        <ol class="horizontalMenu-list list-inline">
+                            <li class="list-inline-item">
+                                <a href="index.html" class="active"><i class="hi hi-dashboard"></i> Dashboard</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-mileage"></i> Masters <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="state-list.html">State</a></li>
+                                    <li><a href="city-list.html">City</a></li>
+                                    <li><a href="bike-list.html">Bike </a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-services "></i> Subscription <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="new-subscription.html">New Subscription</a></li>
+                                    <li><a href="subscription-list.html">Subscription List</a></li>
+                                    <li><a href="">Subscription Process</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="hi hi-employees"></i> Staff <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="add-user.html">New Staff</a></li>
+                                    <li><a href="user-list.html">Staff List</a></li>
+                                    <li><a href="role-list.html">Role</a></li>
+                                    <li><a href="permission.html">Permission</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-calc"></i> Accounting <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Expenses</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-invoices"></i> Reports <i
+                                        class="hi hi-chevron-down mr-0"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Subscription</a></li>
+                                    <li><a href="">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-inventory-list"></i> Inventory</a>
+
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="hi hi-customers"></i> Supplies</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="company-profile.html"><i class="hi hi-avatar-o"></i> Company Profile </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="app-content">
+            <div class="container">
+                <div class="page-header">
+                    <h4 class="page-title">Dashboard</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                    </ol>
+                </div>
+                <div class="row dashboard-grid-card">
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <h6>Today Subscriber</h6>
+                                </div>
+                                <h3 class="mb-2">
+                                    382
+                                    <span class="float-right">
+                                        <svg height="50" width="60">
+                                            <rect fill="rgb(96, 82, 159,1)" x="0" y="40" width="5" height="10"></rect>
+                                            <rect fill="rgb(96, 82, 159,1)" x="10" y="15" width="5" height="35"></rect>
+                                            <rect fill="rgb(96, 82, 159,1)" x="20" y="30" width="5" height="20"></rect>
+                                            <rect fill="rgb(96, 82, 159,1)" x="30" y="20" width="5" height="30"></rect>
+                                            <rect fill="rgb(96, 82, 159,1)" x="40" y="0" width="5" height="60"></rect>
+                                            <rect fill="rgb(96, 82, 159,1)" x="50" y="30" width="5" height="20"></rect>
+                                        </svg>
+                                    </span>
+                                </h3>
+                                <div><i class="hi hi-arrow-up text-success"></i> 30% Increase</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <h6>Today Bike Servicing</h6>
+                                </div>
+                                <h3 class="mb-2">
+                                    654
+                                    <span class="float-right">
+                                        <svg height="50" width="60">
+                                            <rect fill="rgb(50, 202, 254, 1)" x="0" y="40" width="5" height="10"></rect>
+                                            <rect fill="rgb(50, 202, 254, 1)" x="10" y="15" width="5" height="35"></rect>
+                                            <rect fill="rgb(50, 202, 254, 1)" x="20" y="30" width="5" height="20"></rect>
+                                            <rect fill="rgb(50, 202, 254, 1)" x="40" y="20" width="5" height="30"></rect>
+                                            <rect fill="rgb(50, 202, 254, 1)" x="30" y="0" width="5" height="60"></rect>
+                                            <rect fill="rgb(50, 202, 254, 1)" x="50" y="30" width="5" height="20"></rect>
+                                        </svg>
+                                    </span>
+                                </h3>
+                                <div><i class="hi hi-arrow-up text-success"></i> 30% Increase</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <h6>Expire Subscriber</h6>
+                                </div>
+                                <h3 class="mb-2">
+                                    82
+                                    <span class="float-right">
+                                        <svg height="50" width="60">
+                                            <rect fill="rgb(255, 204, 0, 1)" x="0" y="40" width="5" height="10"></rect>
+                                            <rect fill="rgb(255, 204, 0, 1)" x="10" y="15" width="5" height="35"></rect>
+                                            <rect fill="rgb(255, 204, 0, 1)" x="20" y="30" width="5" height="20"></rect>
+                                            <rect fill="rgb(255, 204, 0, 1)" x="30" y="20" width="5" height="30"></rect>
+                                            <rect fill="rgb(255, 204, 0, 1)" x="40" y="0" width="5" height="60"></rect>
+                                            <rect fill="rgb(255, 204, 0, 1)" x="50" y="30" width="5" height="20"></rect>
+                                        </svg>
+                                    </span>
+                                </h3>
+                                <div><i class="hi hi-arrow-down text-danger"></i> 30% Increase</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <h6>Today Revenue</h6>
+                                </div>
+                                <h3 class="mb-2">
+                                    &#8377; 16,382
+                                    <span class="float-right">
+                                        <svg height="50" width="60">
+                                            <rect fill="rgb(94, 216, 79, 1)" x="0" y="40" width="5" height="10"></rect>
+                                            <rect fill="rgb(94, 216, 79, 1)" x="20" y="0" width="5" height="60"></rect>
+                                            <rect fill="rgb(94, 216, 79, 1)" x="10" y="15" width="5" height="35"></rect>
+                                            <rect fill="rgb(94, 216, 79, 1)" x="30" y="20" width="5" height="30"></rect>
+                                            <rect fill="rgb(94, 216, 79, 1)" x="40" y="30" width="5" height="20"></rect>
+                                            <rect fill="rgb(94, 216, 79, 1)" x="50" y="30" width="5" height="20"></rect>
+                                        </svg>
+                                    </span>
+                                </h3>
+                                <div><i class="hi hi-arrow-up text-success"></i> 30% Increase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cards">
+                    <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h6>Total Sales</h6>
+                                <div class="h1 mb-1 fw-700 text-primary">34,516</div>
+                                <div class="displayblock"><i class="hi hi-arrow-up  mr-1 text-success"
+                                        aria-hidden="true"></i>21% Higher Than Average </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h6>Total Subscribers</h6>
+                                <div class="h1 mb-1 fw-700 text-info">56,992</div>
+                                <div class="displayblock"><i class="hi hi-arrow-up  mr-1 text-success"
+                                        aria-hidden="true"></i>21% Higher Than Average </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h6>Total Profit</h6>
+                                <div class="h1 mb-1 fw-700 text-success">&#8377;42,567</div>
+                                <div class="displayblock"><i class="hi hi-arrow-up  mr-1 text-success"
+                                        aria-hidden="true"></i>21% Higher Than Average </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header header-grid">
+                                <h4 class="card-title">Today Servicing Process</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive service">
+                                    <table class="table table-bordered table-hover mb-0 text-nowrap text-table ">
+                                        <thead>
+                                            <tr>
+                                                <th>Bike Number</th>
+                                                <th>Client Name</th>
+                                                <th>Service Duration</th>
+                                                <th class="w-30">Delivery</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>UP 42 2121</td>
+                                                <td>Ryan MacLeod</td>
+                                                <td>5min</td>
+                                                <td>
+                                                    <ol class="progress-strip">
+                                                        <li class="is-complete" data-toggle="tooltip" data-placement="top" title="Service Start">
+                                                         
+                                                        </li>
+                                                        <li class="" data-toggle="tooltip" data-placement="top" title="Service Start">
+                                                          
+                                                        </li>
+                                                        <li class="progress__last" data-toggle="tooltip" data-placement="top" title="Service Start">
+                                                          
+                                                        </li>
+                                                      </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>UP 42 2122</td>
+                                                <td>Jacob Sutherland</td>
+                                                <td>17min</td>
+                                                
+                                                <td>
+                                                    <ol class="progress-strip">
+                                                        <li class="is-complete" data-toggle="tooltip" data-placement="top" title="Service Completed">
+                                                         
+                                                        </li>
+                                                        <li class="is-complete" data-toggle="tooltip" data-placement="top" title="Service Completed">
+                                                          
+                                                        </li>
+                                                        <li class="progress__last is-complete" data-toggle="tooltip" data-placement="top" title="Service Completed">
+                                                          
+                                                        </li>
+                                                      </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>UP 42 2123</td>
+                                                <td>James Oliver</td>
+                                                <td>12min</td>
+                                                
+                                                <td>
+                                                    <ol class="progress-strip">
+                                                        <li class="is-complete" data-toggle="tooltip" data-placement="top" title="Service Last Stage">
+                                                         
+                                                        </li>
+                                                        <li class="is-complete" title="Service Last Stage">
+                                                          
+                                                        </li>
+                                                        <li class="progress__last is-active" title="Service Last Stage">
+                                                          
+                                                        </li>
+                                                      </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>UP 42 2124</td>
+                                                <td>Lisa Nash</td>
+                                                <td>25min</td>
+                                                
+                                                <td>
+                                                    <ol class="progress-strip">
+                                                        <li class="is-complete">
+                                                         
+                                                        </li>
+                                                        <li class="is-complete">
+                                                          
+                                                        </li>
+                                                        <li class="progress__last is-complete">
+                                                          
+                                                        </li>
+                                                      </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>UP 42 2125</td>
+                                                <td>Alan Walsh</td>
+                                                <td>10min</td>
+                                                
+                                                <td>
+                                                    <ol class="progress-strip">
+                                                        <li class="is-complete">
+                                                         
+                                                        </li>
+                                                        <li class="is-danger">
+                                                          
+                                                        </li>
+                                                        <li class="progress__last is-danger">
+                                                          
+                                                        </li>
+                                                      </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>UP 42 2126</td>
+                                                <td>Pippa Mills</td>
+                                                <td>14min</td>
+                                                
+                                                <td>
+                                                    <ol class="progress-strip">
+                                                        <li class="is-complete">
+                                                         
+                                                        </li>
+                                                        <li class="is-complete">
+                                                          
+                                                        </li>
+                                                        <li class="progress__last is-active">
+                                                          
+                                                        </li>
+                                                      </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>UP 42 2127</td>
+                                                <td>Pippa Mills</td>
+                                                <td>14min</td>
+                                                
+                                                <td>
+                                                    <ol class="progress-strip">
+                                                        <li class="is-complete">
+                                                         
+                                                        </li>
+                                                        <li class="is-danger">
+                                                          
+                                                        </li>
+                                                        <li class="progress__last is-danger">
+                                                          
+                                                        </li>
+                                                      </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>UP 42 2128</td>
+                                                <td>Pippa Mills</td>
+                                                <td>14min</td>
+                                                
+                                                <td>
+                                                    <ol class="progress-strip">
+                                                        <li class="is-complete">
+                                                         
+                                                        </li>
+                                                        <li class="is-complete">
+                                                          
+                                                        </li>
+                                                        <li class="progress__last is-complete">
+                                                          
+                                                        </li>
+                                                      </ol>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="app-footer">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        © 2019 Bike Brothers V1.0.0
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/express.min.js"></script>
+    <script src="assets/js/boot.min.js"></script>
+    <script src="assets/js/extra.js"></script>
+    <script>
+        $('[data-toggle="tooltip"]').tooltip()
+    </script>
+</body>
+
+</html>
