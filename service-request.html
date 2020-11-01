@@ -174,7 +174,7 @@
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                    <input type="text" class="form-control" placeholder="Recipient's username" id="showList">
                                                     <div class="input-group-append">
                                                       <button class="btn btn-info" type="button" onclick="showCard('serviceCard')"><i class="hi hi-search"></i></button>
                                                     </div>
@@ -274,12 +274,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                           
+
                                         </div>
                                     </div>
                                 </div>
@@ -367,7 +362,6 @@
 
     <script src="assets/js/express.min.js"></script>
     <script src="assets/js/boot.min.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/extra.js"></script>
     <script>
         var t_table = document.getElementById("acc_tbody");
@@ -431,9 +425,42 @@
                     $("#"+cardId).find('.apploader').removeClass('show');
                 }, 2000)
             }
-            
-            
         }
+        // autocomplete js
+        $( function() {
+            var availableTags = [
+            "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"
+            ];
+            $( "#showList" ).autocomplete({
+                source: availableTags
+            }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {  
+           return $( "<li></li>" )  
+               .data( "item.autocomplete", item )  
+               .append( "<div><span><img src='' /> </span>" + item.label+"</div>")  
+               .appendTo( ul );  
+            };  
+        });
     </script>
 
 </body>
